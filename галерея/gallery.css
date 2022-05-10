@@ -1,0 +1,25 @@
+body{
+	background: #101010;
+	font-family: Times New Roman, Arial, san-serif;
+	font-size: 14pt;
+	color: white;
+	
+}
+
+figure{
+	text-align: center;
+}
+
+
+a{
+	color: white;
+	text-decoration: overline;
+}
+
+table{
+	margin: 10px auto;
+}
+
+img{
+	border-radius: 10px;
+}

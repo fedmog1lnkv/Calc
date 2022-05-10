@@ -1,0 +1,99 @@
+html 
+{
+    background: url(back2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container
+{
+	position: relative;
+	min-width: 300px;
+	min-height: 400px;
+	border-radius: 20px;
+	overflow: hidden;
+	z-index: 10;
+	padding: 40px 30px 30px;
+	box-shadow: 5px 5px 20px #eecda3;
+	backdrop-filter: blur(15px)
+}
+
+.container .calculator
+{
+	position: relative;
+	display: grid;
+}
+
+.container .calculator .value
+{
+	grid-column: span 4;
+	height: 140;
+	width: 300px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 30px;
+	background: transparent;
+	color: white;
+}
+
+.container .calculator span
+{
+	display: grid;
+	place-items: center;
+	height: 75px;
+	width: 75px;
+	color: white;
+	font-weight: 400;
+	cursor: pointer;
+	font-size: 20px;
+	user-select: none;
+	transition: 0.5s;
+}
+
+/* без нажатия на кнопки */
+.container .calculator span:hover
+{
+	transition: 0s;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+/* нажатие на кнопки */
+.container .calculator span:active
+{
+	background: #ef629f;
+	color: #eecda3;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+/* кнопка очистить */
+.container .calculator .clear
+{
+	grid-column: span 2;
+	width: 150px;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+/* кнопка плюс */
+.container .calculator .plus
+{
+	grid-row: span 2;
+	height: 150px;
+}
+
+/* кнопка ответ */
+.otv
+{
+	background: rgba(255, 255, 255, 0.05);
+}
