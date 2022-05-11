@@ -61,14 +61,13 @@ body
 	transition: 0.5s;
 }
 
-/* без нажатия на кнопки */
 .container .calculator span:hover
 {
 	transition: 0s;
 	background: rgba(255, 255, 255, 0.2);
 }
 
-/* нажатие на кнопки */
+/* Press buttons */
 .container .calculator span:active
 {
 	background: #ef629f;
@@ -77,7 +76,7 @@ body
 	font-weight: 500;
 }
 
-/* кнопка очистить */
+/* Buton clear */
 .container .calculator .clear
 {
 	grid-column: span 2;
@@ -85,14 +84,14 @@ body
 	background: rgba(255, 255, 255, 0.05);
 }
 
-/* кнопка плюс */
+/* Buton plus */
 .container .calculator .plus
 {
 	grid-row: span 2;
 	height: 150px;
 }
 
-/* кнопка ответ */
+/* Button answer */
 .otv
 {
 	background: rgba(255, 255, 255, 0.05);
